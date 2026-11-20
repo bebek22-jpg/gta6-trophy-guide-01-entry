@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI: all 55 trophies, offline tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide &amp; tracker</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="lede">Every one of the 55 official trophies — name, description and grade — with a guide to each in our own words, the sources it rests on, a roadmap to the platinum, and a checklist that lives in your browser. No account, no network, no uploads: open this file and play.</p>
+  <div class="progress-wrap" aria-label="Progress">
+    <div class="progress-bar"><div id="progressFill" style="width:0%"></div></div>
+    <p id="progressText">0 of 55 earned</p>
+    <p id="progressByGrade" class="muted"></p>
+  </div>
+  <p class="factline"><span>55 trophies: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze</span><span>All single-player — no online trophies</span><span>About 200 hours to the platinum</span><span>1 playthrough is enough</span></p>
+</header>
+
+<main>
+<section id="missable" class="banner">
+  <h2>⚠ The one trophy you can miss</h2>
+  <p><strong>Positive Mental Attitude</strong> — meditate at all 18 spots across Leonida. One spot is at Jason&rsquo;s house in Chapter 1, and the guides flag it as possibly only available during Chapter 1. Meditate there the first chance you get, before you finish Chapter 1. Everything else on the list can be earned after the story, in free roam. There is no mission replay, so keep a manual save at the start and end of every chapter — and never use a cheat on your platinum save: cheats disable trophies and saving.</p>
+</section>
+
+<section id="roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <div id="roadmapPhases"></div>
+</section>
+
+<section id="controls" aria-label="Filters">
+  <div class="control-row">
+    <label>Search <input id="search" type="search" placeholder="Trophy, mission, or keyword…" autocomplete="off"></label>
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label>Kind
+      <select id="kindFilter">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="stranger">Strangers</option>
+        <option value="crime">Crime &amp; robberies</option>
+        <option value="activity">Activities</option>
+        <option value="collectible">Collectibles &amp; money</option>
+        <option value="completion">100% completion</option>
+        <option value="hidden">Hidden &amp; unsolved</option>
+        <option value="platinum">Platinum</option>
+      </select>
+    </label>
+    <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+    <label class="check"><input id="spoilerSafe" type="checkbox" checked> Spoiler-safe: hide story trophies until earned</label>
+  </div>
+  <div class="control-row">
+    <button id="exportBtn" type="button">Export progress (.json)</button>
+    <label class="import-btn">Import progress <input id="importInput" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Clear all ticks</button>
+    <span id="countText" class="muted"></span>
+  </div>
+</section>
+
+<section id="listSection">
+  <h2 id="listHeading">All 55 trophies</h2>
+  <div id="trophyList"></div>
+  <p id="emptyText" class="muted" hidden>No trophies match these filters.</p>
+</section>
+
+<section id="sources">
+  <h2>Sources &amp; honesty notes</h2>
+  <p>Trophy names, descriptions and grades are the ones shown on the console trophy list (PS5 / Xbox), as compiled from the independent guides below. No official Rockstar, Sony or Microsoft page publishes the list as a web page, and the guides cross-check each other — they agree on all 55 names and grades. Each trophy card names the guides its own steps rest on.</p>
+  <ul id="sourceList"></ul>
+  <p><strong>What is verified, what is not.</strong> 47 trophies are <em>confirmed</em>: the guides agree on how to earn them. 6 are <em>reported</em>: the guides agree on a likely method drawn from the trophy description, but not every source has confirmed it. 2 — <em>Bad Luck, I Guess</em> and <em>The Truth Is Out There</em> — are <em>unconfirmed</em>: no published guide states a method as of 21 November 2026, and this guide says so instead of inventing one. One disagreement: Push Square&rsquo;s page labels <em>Maximum Withdrawal</em> Bronze, while GTA Vibes, GTA Scoop, KeenGamer and the kit data list it Silver; this guide lists it Silver.</p>
+  <p class="muted">Guide text is written for this page in our own words; it draws on the guides above and cites them, and never copies their text. No Rockstar Games logo, artwork or font is used. This is an unofficial fan guide, not affiliated with Rockstar Games.</p>
+</section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an offline, open-source GTA VI trophy tracker. Data as of 21 November 2026, two days after launch; hidden-trophy methods will be updated as the community confirms them.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
